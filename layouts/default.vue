@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NavBar />
     <Nuxt />
   </div>
 </template>
@@ -57,3 +58,13 @@ html {
   background-color: #35495e;
 }
 </style>
+
+<script>
+import NavBar from "@/components/NavBar";
+
+export default {
+  components: {
+    NavBar
+  }
+};
+</script>
