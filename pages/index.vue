@@ -21,6 +21,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Home Page"
+    };
+  },
   computed: {
     posts() {
       return this.$store.state.posts.all;
