@@ -2,8 +2,12 @@
   <div>
     <nav>
       <ul class="navbar">
-        <li>Home</li>
-        <li>Posts</li>
+        <li>
+          <NuxtLink to="/">Home</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/posts">Posts</NuxtLink>
+        </li>
         <li>About</li>
         <li>Blog</li>
       </ul>
@@ -25,5 +29,12 @@ export default {};
 }
 .navbar li {
   list-style-type: none;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #b1b108;
+}
+.navbar li a:hover {
+  color: #fff;
 }
 </style>
