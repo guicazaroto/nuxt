@@ -10,7 +10,7 @@
           v-for="post in posts"
           :key="post.id"
           :to="{ name: 'posts-id', params: { id: post.id } }"
-          class="button--green"
+          class="button--blue"
         >
           {{ post.title }}
         </nuxt-link>
@@ -40,19 +40,18 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: #c8e90f;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: #c8e90f;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
